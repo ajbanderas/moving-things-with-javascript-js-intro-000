@@ -23,10 +23,11 @@ function moveDodgerLeft(){
 function moveDodgerRight(){
   var leftNumbers = dodger.style.left.replace('px', '');
   var left = parseInt(leftNumbers, 10);
-  dodger.style.left = `${left + 1}px`;
+  
   if(left < 360){
-    window.requestAnimationFrame(moveDodgerRight)
-  }
+    dodger.style.left = `${left + 1}px`;
+  
+  }  window.requestAnimationFrame(moveDodgerRight)
 }
 
 document.addEventListener('keydown', function(e){
