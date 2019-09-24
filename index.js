@@ -27,7 +27,6 @@ function moveDodgerRight(){
   if(left < 360){
     window.requestAnimationFrame(moveDodgerRight)
   }
-  window.requestAnimationFrame(moveDodgerRight)
 }
 
 document.addEventListener('keydown', function(e){
